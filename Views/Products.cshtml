@@ -1,0 +1,47 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Products> 
+
+@using ContentModels = Umbraco.Web.PublishedModels;
+
+@{
+	Layout = "Master.cshtml";
+}
+<br> <br>
+    @Html.GetGridHtml(Model, "bodyText", "bootstrap3-fluid")
+
+<br> <br>
+           
+           
+@{
+   
+	var selection = Umbraco.Content(Guid.Parse("7f2de253-1fd1-4b59-a34e-71fcf9cf0982"))
+    .ChildrenOfType("product")
+    .Where(x => x.IsVisible());
+  
+    
+}
+
+     <div class = "center">  
+        	
+            @if (Model.FeaturedProducts != null)
+            {
+                foreach (ContentModels.Product product in Model.FeaturedProducts)
+                {
+                    
+                    
+                    <div class="card" style="width: 30%;">
+                        <br>
+                          <img class="card-img-top" src="@product.Photos.Url" style ="width:50%">
+                          <div class="card-body">
+                            <h5 class="card-title">@product.ProductName</h5>
+                            <p class="card-text">@product.Description</p>
+                            <a href="@product.Url" class="btn btn-outline-dark" style="width: 100%;">Vezi Meniuri</a>
+  </div>
+</div>
+                    <br> <br> 
+                    
+                }
+             
+            }
+            
+            
+            </div>  

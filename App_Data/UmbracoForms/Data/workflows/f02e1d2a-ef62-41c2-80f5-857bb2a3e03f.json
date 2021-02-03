@@ -1,0 +1,18 @@
+{
+  "id": "f02e1d2a-ef62-41c2-80f5-857bb2a3e03f",
+  "name": "Send template email to miloiu_marian@yahoo.com",
+  "form": "871c6c34-8c30-4248-a120-3b207388717c",
+  "active": true,
+  "includeSensitiveData": "False",
+  "workflowTypeId": "17c61629-d984-4e86-b43b-a8407b3efea9",
+  "executesOn": "Submitted",
+  "settings": {
+    "Email": "miloiu_marian@yahoo.com",
+    "SenderEmail": "",
+    "ReplyToEmail": "",
+    "Subject": "The Form '{form_name}' was submitted",
+    "RazorViewFilePath": "Forms/Emails/Example-Template.cshtml",
+    "Attachment": ""
+  },
+  "sortOrder": 0
+}

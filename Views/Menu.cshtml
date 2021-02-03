@@ -1,0 +1,30 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Menu>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+
+
+@{
+	var selection = Umbraco.Content(Guid.Parse("d9441266-f25f-4db1-be45-a77b7da82fae"))
+    .ChildrenOfType("menu")
+    .Where(x => x.IsVisible());
+}
+
+
+<ul>
+	@foreach (var item in selection)
+	{ <br>
+        	<div class="card" style="width: 18rem;">
+            <div class="card-body">
+            <h5 class="card-title">@item.Name</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="#" class="card-link">@item.Url</a>
+            <a href="#" class="card-link">@item.Url</a>
+          </div>
+        </div>
+        <br> <br>
+	}
+</ul>
