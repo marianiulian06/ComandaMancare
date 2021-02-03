@@ -9,7 +9,7 @@
   "settings": {
     "Fields": "{\"doctype\":\"product\",\"nameField\":\"231a541a-1412-4220-fd32-b56d221b34b3\",\"properties\":[{\"id\":\"bodyText\",\"value\":\"Content\",\"$$hashKey\":\"object:2818\",\"field\":\"9fa1d11b-c8f6-45e9-82ca-7fd71ebfea74\"},{\"id\":\"description\",\"value\":\"Description\",\"$$hashKey\":\"object:2819\",\"field\":\"9fa1d11b-c8f6-45e9-82ca-7fd71ebfea74\"},{\"id\":\"photos\",\"value\":\"Photos\",\"$$hashKey\":\"object:2820\"},{\"id\":\"price\",\"value\":\"Price\",\"$$hashKey\":\"object:2821\"},{\"id\":\"productName\",\"value\":\"Product Name\",\"$$hashKey\":\"object:2822\",\"field\":\"231a541a-1412-4220-fd32-b56d221b34b3\"}]}",
     "Publish": "True",
-    "RootNode": ""
+    "RootNode": "1076"
   },
   "sortOrder": 1
 }

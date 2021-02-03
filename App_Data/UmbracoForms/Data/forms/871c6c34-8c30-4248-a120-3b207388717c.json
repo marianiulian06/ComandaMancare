@@ -125,7 +125,7 @@
   "xPathOnSubmit": null,
   "manualApproval": false,
   "storeRecordsLocally": true,
-  "cssClass": null,
+  "cssClass": "reviews",
   "disableDefaultStylesheet": false,
   "useClientDependency": false,
   "workflows": [
@@ -133,7 +133,7 @@
     "d44e37c8-c6d4-4c69-a8b4-d47530cf1242"
   ],
   "datasource": null,
-  "submitLabel": "Submit",
-  "nextLabel": "Next",
-  "prevLabel": "Previous"
+  "submitLabel": "Trimite",
+  "nextLabel": "Urmatorul",
+  "prevLabel": "Anterior"
 }
