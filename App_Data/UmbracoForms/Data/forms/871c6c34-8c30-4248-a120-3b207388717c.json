@@ -107,7 +107,7 @@
           "condition": null
         }
       ],
-      "caption": "Contact Form",
+      "caption": "Scrie-ne despre experiența ta cu noi",
       "sortOrder": 0,
       "id": "00000000-0000-0000-0000-000000000000",
       "form": "00000000-0000-0000-0000-000000000000"
@@ -120,7 +120,7 @@
   "hideFieldValidation": false,
   "requiredErrorMessage": "Please provide a value for {0}",
   "invalidErrorMessage": "Please provide a valid value for {0}",
-  "messageOnSubmit": "Thank you",
+  "messageOnSubmit": "Iti multumim pentru review , te mai asteptăm !",
   "goToPageOnSubmit": 0,
   "xPathOnSubmit": null,
   "manualApproval": false,

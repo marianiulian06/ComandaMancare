@@ -1,15 +1,15 @@
 {
   "id": "d44e37c8-c6d4-4c69-a8b4-d47530cf1242",
-  "name": "Reviews",
+  "name": "Testimonials",
   "form": "871c6c34-8c30-4248-a120-3b207388717c",
   "active": true,
   "includeSensitiveData": "False",
   "workflowTypeId": "89fb1e31-9f36-4e08-9d1b-af1180d340db",
   "executesOn": "Submitted",
   "settings": {
-    "Fields": "{\"doctype\":\"product\",\"nameField\":\"231a541a-1412-4220-fd32-b56d221b34b3\",\"properties\":[{\"id\":\"bodyText\",\"value\":\"Content\",\"$$hashKey\":\"object:2818\",\"field\":\"9fa1d11b-c8f6-45e9-82ca-7fd71ebfea74\"},{\"id\":\"description\",\"value\":\"Description\",\"$$hashKey\":\"object:2819\",\"field\":\"9fa1d11b-c8f6-45e9-82ca-7fd71ebfea74\"},{\"id\":\"photos\",\"value\":\"Photos\",\"$$hashKey\":\"object:2820\"},{\"id\":\"price\",\"value\":\"Price\",\"$$hashKey\":\"object:2821\"},{\"id\":\"productName\",\"value\":\"Product Name\",\"$$hashKey\":\"object:2822\",\"field\":\"231a541a-1412-4220-fd32-b56d221b34b3\"}]}",
+    "Fields": "{\"doctype\":\"testimonial\",\"nameField\":\"231a541a-1412-4220-fd32-b56d221b34b3\",\"properties\":[{\"id\":\"mesajClient\",\"value\":\"MesajClient\",\"$$hashKey\":\"object:2157\",\"field\":\"9fa1d11b-c8f6-45e9-82ca-7fd71ebfea74\"},{\"id\":\"numeClient\",\"value\":\"Nume Client\",\"$$hashKey\":\"object:2158\",\"field\":\"231a541a-1412-4220-fd32-b56d221b34b3\"}]}",
     "Publish": "True",
-    "RootNode": "1076"
+    "RootNode": "1124"
   },
   "sortOrder": 1
 }

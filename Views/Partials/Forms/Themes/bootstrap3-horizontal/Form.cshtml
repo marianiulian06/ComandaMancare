@@ -4,6 +4,7 @@
 @using Umbraco.Forms.Mvc.Models
 @using Umbraco.Forms.Mvc.BusinessLogic
 
+
 @*Set a default class on all fields - needed by bootstrap*@
 @Html.SetFormFieldClass("form-control")
 
@@ -26,7 +27,7 @@
     @foreach (FieldsetViewModel fs in Model.CurrentPage.Fieldsets)
     {
 
-        <fieldset class="umbraco-forms-fieldset" id="@fs.Id">
+     <fieldset class="umbraco-forms-fieldset"  id="@fs.Id"> 
 
             @if (string.IsNullOrEmpty(fs.Caption) == false)
             {
@@ -43,11 +44,11 @@
                         {
                             bool hidden = f.HasCondition && f.ConditionActionType == FieldConditionActionType.Show;
 
-                            <div class="@Html.GetFormFieldWrapperClass(f.FieldTypeName)  @f.CssClass" @{ if (hidden) { <text> style="display: none" </text>  } }>
+                           <div class="@Html.GetFormFieldWrapperClass(f.FieldTypeName)  @f.CssClass" @{ if (hidden) { <text> style="display: none" </text>  } }>
 
                                 @if (!f.HideLabel)
                                 {
-                                    <label for="@f.Id" class="col-sm-2 control-label umbraco-forms-label">
+                                 <label for="@f.Id" class="col-sm-2 control-label umbraco-forms-label">
                                         @f.Caption 
                                         @if (f.ShowIndicator)
                                         {
@@ -56,7 +57,7 @@
                                     </label>
                                 }
 
-                                <div class="col-sm-10 umbraco-forms-field-wrapper">
+                                <div class="col-sm-10 umbraco-forms-field-wrapper"> 
 
                                     @Html.Partial(FormThemeResolver.GetFieldView(Model, f), f)
 

@@ -17,8 +17,8 @@ using Umbraco.Core.Models.PublishedContent;
 using Umbraco.Web;
 using Umbraco.ModelsBuilder.Embedded;
 
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "954983a583ba0f64")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.4")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "e73ba8b75a5795bc")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.7")]
 
 namespace Umbraco.Web.PublishedModels
 {
@@ -76,39 +76,11 @@ namespace Umbraco.Web.PublishedModels
 		public string DescriptionIntro => this.Value<string>("descriptionIntro");
 
 		///<summary>
-		/// Email User Reviws
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
-		[ImplementPropertyType("emailUserReviws")]
-		public string EmailUserReviws => this.Value<string>("emailUserReviws");
-
-		///<summary>
 		/// Adress
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
 		[ImplementPropertyType("footerAdress")]
 		public global::System.Web.IHtmlString FooterAdress => this.Value<global::System.Web.IHtmlString>("footerAdress");
-
-		///<summary>
-		/// Image Intro
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
-		[ImplementPropertyType("imageIntro")]
-		public global::Umbraco.Core.Models.PublishedContent.IPublishedContent ImageIntro => this.Value<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>("imageIntro");
-
-		///<summary>
-		/// Message User Reviews
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
-		[ImplementPropertyType("messageUserReviews")]
-		public string MessageUserReviews => this.Value<string>("messageUserReviews");
-
-		///<summary>
-		/// Name User Reviews
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
-		[ImplementPropertyType("nameUserReviews")]
-		public string NameUserReviews => this.Value<string>("nameUserReviews");
 
 		///<summary>
 		/// Site Name
@@ -372,6 +344,79 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
 		[ImplementPropertyType("contactForm")]
 		public global::Newtonsoft.Json.Linq.JToken ContactForm => this.Value<global::Newtonsoft.Json.Linq.JToken>("contactForm");
+	}
+
+	/// <summary>Testimonial</summary>
+	[PublishedModel("testimonial")]
+	public partial class Testimonial : PublishedContentModel
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		public new const string ModelTypeAlias = "testimonial";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Testimonial, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public Testimonial(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// MesajClient
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		[ImplementPropertyType("mesajClient")]
+		public string MesajClient => this.Value<string>("mesajClient");
+
+		///<summary>
+		/// Nume Client
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		[ImplementPropertyType("numeClient")]
+		public string NumeClient => this.Value<string>("numeClient");
+	}
+
+	/// <summary>Testimonials</summary>
+	[PublishedModel("testimonials")]
+	public partial class Testimonials : PublishedContentModel
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		public new const string ModelTypeAlias = "testimonials";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<Testimonials, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public Testimonials(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Nume Testimonial
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		[ImplementPropertyType("numeTestimonial")]
+		public string NumeTestimonial => this.Value<string>("numeTestimonial");
 	}
 
 	/// <summary>Folder</summary>
