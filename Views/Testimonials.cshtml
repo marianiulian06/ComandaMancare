@@ -1,0 +1,39 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage<ContentModels.Testimonials>
+@using ContentModels = Umbraco.Web.PublishedModels;
+@{
+	Layout = "Master.cshtml";
+}
+
+
+
+
+
+@{
+	var selection = Umbraco.Content(Guid.Parse("b98c5150-ab95-421a-800e-09520f5ed31f"))
+    .ChildrenOfType("testimonial")
+    .Where(x => x.IsVisible());
+}
+
+
+
+
+
+
+
+	@foreach (var testimonial in selection)
+	{
+		
+	
+        	
+		<div class="card" style="width:400px">
+          <img class="card-img-top" src="">
+          <div class="card-body">
+            <h4 class="card-title">@testimonial.Name</h4>
+            <p class="card-text">@Model.Value("mesajClient")</p>
+          </div>
+        </div>
+
+		
+	}
+
+

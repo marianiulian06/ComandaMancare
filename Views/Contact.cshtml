@@ -7,7 +7,12 @@
 
 
 <br> <br> <br>
-@Html.GetGridHtml(Model, "contactForm", "bootstrap3-fluid")
+<div class = "container-fluid">
+  @Html.GetGridHtml(Model, "contactForm", "bootstrap3-fluid")
+  
+
+</div>
 
 
 
+@Model.Value("numeTesti")
