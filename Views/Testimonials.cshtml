@@ -17,23 +17,27 @@
 
 
 
-
-
+<br> <br> <br>
+<div class= "container"> 
 
 	@foreach (var testimonial in selection)
 	{
 		
 	
         	
-		<div class="card" style="width:400px">
-          <img class="card-img-top" src="">
+		<div class="card" style="width:100%; height: 100%">
+         
           <div class="card-body">
             <h4 class="card-title">@testimonial.Name</h4>
-            <p class="card-text">@Model.Value("mesajClient")</p>
+            <p class="card-text"></p>
           </div>
         </div>
+        
+        
+        
 
 		
 	}
+</div>
 
 

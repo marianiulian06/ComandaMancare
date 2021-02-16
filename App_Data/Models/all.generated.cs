@@ -6,7 +6,7 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "e73ba8b75a5795bc")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "93e1a7c349d4376e")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -390,7 +390,7 @@ namespace Umbraco.Web.PublishedModels
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
 		[ImplementPropertyType("mesajClient")]
-		public string MesajClient => this.Value<string>("mesajClient");
+		public global::System.Collections.Generic.IEnumerable<string> MesajClient => this.Value<global::System.Collections.Generic.IEnumerable<string>>("mesajClient");
 
 		///<summary>
 		/// Nume Client
@@ -424,13 +424,6 @@ namespace Umbraco.Web.PublishedModels
 		{ }
 
 		// properties
-
-		///<summary>
-		/// Nume Testimonial
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
-		[ImplementPropertyType("numeTestimonial")]
-		public string NumeTestimonial => this.Value<string>("numeTestimonial");
 	}
 
 	/// <summary>Folder</summary>
