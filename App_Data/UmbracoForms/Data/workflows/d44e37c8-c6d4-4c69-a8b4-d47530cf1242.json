@@ -7,7 +7,7 @@
   "workflowTypeId": "89fb1e31-9f36-4e08-9d1b-af1180d340db",
   "executesOn": "Submitted",
   "settings": {
-    "Fields": "{\"doctype\":\"testimonial\",\"nameField\":\"231a541a-1412-4220-fd32-b56d221b34b3\",\"properties\":[{\"id\":\"mesajClient\",\"value\":\"MesajClient\",\"$$hashKey\":\"object:2157\",\"field\":\"9fa1d11b-c8f6-45e9-82ca-7fd71ebfea74\"},{\"id\":\"numeClient\",\"value\":\"Nume Client\",\"$$hashKey\":\"object:2158\",\"field\":\"231a541a-1412-4220-fd32-b56d221b34b3\"}]}",
+    "Fields": "{\"doctype\":\"testimonial\",\"nameField\":\"231a541a-1412-4220-fd32-b56d221b34b3\",\"properties\":[{\"id\":\"mesajClient\",\"value\":\"MesajClient\",\"$$hashKey\":\"object:350\",\"field\":\"9fa1d11b-c8f6-45e9-82ca-7fd71ebfea74\"},{\"id\":\"numeClient\",\"value\":\"Nume Client\",\"$$hashKey\":\"object:351\",\"field\":\"231a541a-1412-4220-fd32-b56d221b34b3\"}]}",
     "Publish": "True",
     "RootNode": "1124"
   },

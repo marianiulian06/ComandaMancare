@@ -3,26 +3,13 @@
 @{
 	Layout = "Master.cshtml";
 }
+<br> <br> <br> 
 
 
-
-
+<div class= "container"> 
 
 <h1> Vezi meniuri mai jos </h1>
 
 
 
-@{
-	var selection = Umbraco.Content(Guid.Parse("7f2de253-1fd1-4b59-a34e-71fcf9cf0982"))
-    .ChildrenOfType("menu")
-    .Where(x => x.IsVisible());
-}
-<ul>
-	@foreach (var item in selection)
-	{
-		<li>
-			<a href="@item.Url">@item.Name</a>  
-		</li>
-	}
-</ul>
-
+</div>

@@ -18,13 +18,11 @@
 </head>
 
 <body>
-    <!-- Nav -->
-  
     
- 
-
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    
+    <!-- Nav -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
+    <br>
   <a class="navbar-brand" href="/">ComandăMâncare</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -40,20 +38,37 @@
       <li class="nav-item">
         <a class="nav-link" href="contact">Lasă-ne un Review !</a>
       </li>
+      <li class="nav-item">
+        <a class="nav-link" href="testimonials">Vezi ce spun și alții despre noi</a>
+      </li>
     </ul>
     
   </div>
 </nav>
 
-<!-- intro -->
+
   
 
   @RenderBody()
   
-    <footer class="bg-light text-center text-lg-start">
+  
+    <!--Footer--> 
+<footer id="footer"> 
+  
+ <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+    © 2021 Copyright:
+    <a class="text-dark" href="">MarianIulian</a>
+  </div>
+ 
+</footer>
 
-        <div class="text-center p-3"> @Model.Value("footerAdress")</div>
-    </footer>
+
+<div id="page-container">
+   <div id="content-wrap">
+     <!-- all other page content -->
+   </div>
+   <footer id="footer"></footer>
+ </div>
   
 
 
