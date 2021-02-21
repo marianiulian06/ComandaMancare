@@ -10,7 +10,6 @@ min-height: 100vh;
 
 
 
- 
 .siteName {
     font-size: 80px;
     text-align: center;
@@ -18,16 +17,17 @@ min-height: 100vh;
     
 }
 
-
-
-
+ 
 
 .descriptionIntro {
-    font-size: 30px;
+    font-size: 160px;
     text-align: center;
     font-family: 'Indie Flower', cursive;
     
 }
+
+
+
 
 
 .pageTitle {
@@ -37,6 +37,8 @@ min-height: 100vh;
     font-family: 'Indie Flower', cursive;
     background-color: red;
 }
+
+
 
 .card-img-top{
     
