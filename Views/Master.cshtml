@@ -1,6 +1,7 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
 @{
 	Layout = null;
+	var home = (Home)Model.Root();
 }
 
 @* the fun starts here *@
@@ -54,22 +55,18 @@
   
   
    
-<footer id="footer"> 
+<footer> 
   
  <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
-    © 2021 Copyright:
-    <a class="text-dark" href="">MarianIulian</a>
+   
+   <p> © 2021 Copyright: Marian Iulian </p>
+   
   </div>
  
 </footer>   <!-- to do: de modificat Footer--> 
 
 
-<div id="page-container">
-   <div id="content-wrap">
-     <!-- all other page content -->
-   </div>
-   <footer id="footer"></footer>
- </div>
+
   
 
 

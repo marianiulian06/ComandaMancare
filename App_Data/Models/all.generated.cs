@@ -6,8 +6,8 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "a516e0556aa6a3f3")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.2")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "98cfdc0a11809d94")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.5")]
 
 
 // FILE: models.generated.cs
@@ -87,14 +87,21 @@ namespace Umbraco.Web.PublishedModels
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
 		[ImplementPropertyType("descriptionIntro")]
-		public string DescriptionIntro => this.Value<string>("descriptionIntro");
+		public global::System.Web.IHtmlString DescriptionIntro => this.Value<global::System.Web.IHtmlString>("descriptionIntro");
 
 		///<summary>
-		/// Adress
+		/// footerCopyright
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
-		[ImplementPropertyType("footerAdress")]
-		public global::System.Web.IHtmlString FooterAdress => this.Value<global::System.Web.IHtmlString>("footerAdress");
+		[ImplementPropertyType("footerCopyright")]
+		public global::System.Web.IHtmlString FooterCopyright => this.Value<global::System.Web.IHtmlString>("footerCopyright");
+
+		///<summary>
+		/// footerName
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		[ImplementPropertyType("footerName")]
+		public string FooterName => this.Value<string>("footerName");
 
 		///<summary>
 		/// Site Name
@@ -358,6 +365,20 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
 		[ImplementPropertyType("contactForm")]
 		public global::Newtonsoft.Json.Linq.JToken ContactForm => this.Value<global::Newtonsoft.Json.Linq.JToken>("contactForm");
+
+		///<summary>
+		/// Sub Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		[ImplementPropertyType("subTitle")]
+		public global::System.Web.IHtmlString SubTitle => this.Value<global::System.Web.IHtmlString>("subTitle");
+
+		///<summary>
+		/// Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		[ImplementPropertyType("title")]
+		public global::System.Web.IHtmlString Title => this.Value<global::System.Web.IHtmlString>("title");
 	}
 
 	/// <summary>Testimonial</summary>
@@ -386,11 +407,11 @@ namespace Umbraco.Web.PublishedModels
 		// properties
 
 		///<summary>
-		/// MesajClient
+		/// Mesaj Client
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
 		[ImplementPropertyType("mesajClient")]
-		public global::System.Collections.Generic.IEnumerable<string> MesajClient => this.Value<global::System.Collections.Generic.IEnumerable<string>>("mesajClient");
+		public string MesajClient => this.Value<string>("mesajClient");
 
 		///<summary>
 		/// Nume Client
@@ -424,74 +445,20 @@ namespace Umbraco.Web.PublishedModels
 		{ }
 
 		// properties
-	}
-
-	/// <summary>Formular Cariera din  AngularRestaurant</summary>
-	[PublishedModel("formularCarieraAngularRestaurant")]
-	public partial class FormularCarieraAngularRestaurant : PublishedContentModel
-	{
-		// helpers
-#pragma warning disable 0109 // new is redundant
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
-		public new const string ModelTypeAlias = "formularCarieraAngularRestaurant";
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
-		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
-		public new static IPublishedContentType GetModelContentType()
-			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<FormularCarieraAngularRestaurant, TValue>> selector)
-			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
-#pragma warning restore 0109
-
-		// ctor
-		public FormularCarieraAngularRestaurant(IPublishedContent content)
-			: base(content)
-		{ }
-
-		// properties
 
 		///<summary>
-		/// Adresa
+		/// featuredTestimonials
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
-		[ImplementPropertyType("adresa")]
-		public string Adresa => this.Value<string>("adresa");
+		[ImplementPropertyType("featuredTestimonials")]
+		public global::System.Collections.Generic.IEnumerable<global::Umbraco.Core.Models.PublishedContent.IPublishedContent> FeaturedTestimonials => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>>("featuredTestimonials");
 
 		///<summary>
-		/// Aplic pentru postul de
+		/// Header
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
-		[ImplementPropertyType("aplicPentruPostulDe")]
-		public string AplicPentruPostulDe => this.Value<string>("aplicPentruPostulDe");
-
-		///<summary>
-		/// Email
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
-		[ImplementPropertyType("email")]
-		public string Email => this.Value<string>("email");
-
-		///<summary>
-		/// Nume
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
-		[ImplementPropertyType("nume")]
-		public string Nume => this.Value<string>("nume");
-
-		///<summary>
-		/// Oras
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
-		[ImplementPropertyType("oras")]
-		public string Oras => this.Value<string>("oras");
-
-		///<summary>
-		/// Prenume
-		///</summary>
-		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
-		[ImplementPropertyType("prenume")]
-		public string Prenume => this.Value<string>("prenume");
+		[ImplementPropertyType("header")]
+		public global::Newtonsoft.Json.Linq.JToken Header => this.Value<global::Newtonsoft.Json.Linq.JToken>("header");
 	}
 
 	/// <summary>Folder</summary>
