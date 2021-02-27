@@ -200,8 +200,8 @@ C:\Users\iuli\Desktop\umbraco1.1\comandamancare\bin\Umbraco.Web.pdb
 C:\Users\iuli\Desktop\umbraco1.1\comandamancare\bin\Umbraco.Web.xml
 C:\Users\iuli\Desktop\umbraco1.1\comandamancare\bin\Umbraco.Web.UI.xml
 C:\Users\iuli\Desktop\umbraco1.1\comandamancare\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\iuli\Desktop\umbraco1.1\comandamancare\obj\Debug\comandamancare.csprojAssemblyReference.cache
 C:\Users\iuli\Desktop\umbraco1.1\comandamancare\obj\Debug\comandamancare.csproj.CoreCompileInputs.cache
 C:\Users\iuli\Desktop\umbraco1.1\comandamancare\obj\Debug\comandamancare.csproj.CopyComplete
 C:\Users\iuli\Desktop\umbraco1.1\comandamancare\obj\Debug\comandamancare.dll
 C:\Users\iuli\Desktop\umbraco1.1\comandamancare\obj\Debug\comandamancare.pdb
+C:\Users\iuli\Desktop\umbraco1.1\comandamancare\obj\Debug\comandamancare.csprojAssemblyReference.cache
