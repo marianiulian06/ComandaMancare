@@ -6,8 +6,8 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "98cfdc0a11809d94")]
-[assembly:System.Reflection.AssemblyVersion("0.0.0.5")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "59d26cb362f23815")]
+[assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
 // FILE: models.generated.cs
@@ -459,6 +459,32 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
 		[ImplementPropertyType("header")]
 		public global::Newtonsoft.Json.Linq.JToken Header => this.Value<global::Newtonsoft.Json.Linq.JToken>("header");
+	}
+
+	/// <summary>ContactSugestiiClienti</summary>
+	[PublishedModel("contactSugestiiClienti")]
+	public partial class ContactSugestiiClienti : PublishedContentModel
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		public new const string ModelTypeAlias = "contactSugestiiClienti";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<ContactSugestiiClienti, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public ContactSugestiiClienti(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
 	}
 
 	/// <summary>Folder</summary>
