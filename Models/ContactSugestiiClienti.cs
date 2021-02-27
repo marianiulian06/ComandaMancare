@@ -4,20 +4,7 @@ namespace comandamancare.Models
 {
     public class ContactSugestiiClienti
     { 
-    //{
-    //    [Required]
-    //    public string FirstName { get; set; }
-
-    //    [Required]
-    //    public string LastName { get; set; }
-
-    //    [Required]
-    //    [EmailAddress]
-    //    public string EmailAdress { get; set; }
-    //    [Required]
-    //    public string Message { get; set; } 
-
-
+    
 
         [Required]
         [Display(Name = "First Name:")]

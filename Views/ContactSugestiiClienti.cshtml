@@ -1,11 +1,25 @@
 ﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
 @{
-	Layout = "Master.cshtml";
+    Layout = "Master.cshtml";
 }
 
 @* the fun starts here *@
-<br> <br> <br> <br>
+<br>
+<br>
+<br>
+<br>
+
 
 <div class="container">
-	@{ Html.RenderAction("RenderForm","ContactSugestiiClientiSurface");}
+
+    @if (TempData["ContactSucces"] != null && (bool)TempData["ContactSucces"])
+    {
+        <p>Mesajul tau a fost trimis cu succes!</p>
+    }
+    else
+    {
+        Html.RenderAction("RenderForm", "ContactSugestiiClientiSurface");
+    }
+
+
 </div>
