@@ -1,0 +1,39 @@
+﻿@inherits Umbraco.Web.Mvc.UmbracoViewPage
+@{
+    Layout = "Master.cshtml";
+}
+
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+
+<div class="container">
+
+  
+
+
+
+    @if (TempData["ContactSucces"] != null && (bool)TempData["ContactSucces"])
+    {
+        <p>Mesajul tau a fost trimis cu succes!</p>
+    }
+    else
+    {
+        Html.RenderAction("RenderForm", "SubmitFormAjaxSurface");
+    }
+
+
+</div>
+
+<script type="text/javascript">
+    $(document).on("click", ".use-ajax", function (e) {
+            e.preventDefault();
+            var form = $(this).closest('form');
+            $(form).submit();
+        });
+</script>

@@ -7,20 +7,20 @@ namespace comandamancare.Models
     
 
         [Required]
-        [Display(Name = "First Name:")]
+        [Display(Name = "Nume: ")]
         public string FirstName { get; set; }
 
         [Required]
-        [Display(Name = "Last Name:")]
+        [Display(Name = "Prenume: ")]
         public string LastName { get; set; }
 
         [Required]
-        [EmailAddress]
-        [Display(Name = "Email Address:")]
+        [EmailAddress(ErrorMessage = "Adresa e-mail invalida") ]
+        [Display(Name = "Email: ")]
         public string EmailAddress { get; set; }
 
         [Required]
-        [Display(Name = "Message:")]
+        [Display(Name = "Mesaj: ")]
         public string Message { get; set; }
 
     }

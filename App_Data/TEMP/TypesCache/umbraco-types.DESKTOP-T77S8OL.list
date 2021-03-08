@@ -91,6 +91,7 @@ comandamancare.EnableRouting.myComposer, comandamancare, Version=1.0.0.0, Cultur
 comandamancare.Controllers.ContactSugestiiClientiSurfaceController, comandamancare, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 comandamancare.Controllers.MyApiController, comandamancare, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 comandamancare.Controllers.PeopleController, comandamancare, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+comandamancare.Controllers.SubmitFormAjaxSurfaceController, comandamancare, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Forms.Core.Migrations.V_8_0_0.AddFormsApplicationPermission, Umbraco.Forms.Core, Version=8.6.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Forms.Core.Migrations.V_8_0_0.AddFormsMacro, Umbraco.Forms.Core, Version=8.6.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Forms.Core.Migrations.V_8_0_0.AddFormsTables, Umbraco.Forms.Core, Version=8.6.0.0, Culture=neutral, PublicKeyToken=null
@@ -414,6 +415,7 @@ Umbraco.Web.PropertyEditors.ValueConverters.RteMacroRenderingValueConverter, Umb
 Umbraco.Web.Mvc.PluginController
 
 comandamancare.Controllers.ContactSugestiiClientiSurfaceController, comandamancare, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+comandamancare.Controllers.SubmitFormAjaxSurfaceController, comandamancare, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbProfileController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbLoginStatusController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbRegisterController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
@@ -525,6 +527,7 @@ Umbraco.Forms.Web.Editors.WorkflowController, Umbraco.Forms.Web, Version=8.6.0.0
 Umbraco.Web.Mvc.SurfaceController
 
 comandamancare.Controllers.ContactSugestiiClientiSurfaceController, comandamancare, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+comandamancare.Controllers.SubmitFormAjaxSurfaceController, comandamancare, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbProfileController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbLoginStatusController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null
 Umbraco.Web.Controllers.UmbRegisterController, Umbraco.Web, Version=8.0.0.0, Culture=neutral, PublicKeyToken=null

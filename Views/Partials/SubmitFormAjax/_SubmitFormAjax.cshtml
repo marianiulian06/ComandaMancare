@@ -1,0 +1,64 @@
+﻿@inherits UmbracoViewPage<comandamancare.Models.ContactSugestiiClienti>
+
+<div id="formOuter" >
+  @*@  @using (Html.BeginUmbracoForm("SubmitForm", "ContactSugestiiClientiSurface", FormMethod.Post)) *@
+   @using (Ajax.BeginForm("SubmitForm", "ContactSugestiiClientiSurface", null, new AjaxOptions {
+       HttpMethod = "POST",
+       InsertionMode = InsertionMode.Replace,
+       UpdateTargetId = "formOuter"
+     } ))
+
+    {
+       
+       @Html.AntiForgeryToken()
+
+
+
+        <div class="form-group">
+            <div class="col-xs-3">
+                @Html.LabelFor(m => m.FirstName)
+            </div>
+            <div class="col-xs-9">
+                @Html.TextBoxFor(m => m.FirstName)
+                @Html.ValidationMessageFor(m => m.FirstName)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-3">
+                @Html.LabelFor(m => m.LastName)
+            </div>
+            <div class="col-xs-9">
+                @Html.TextBoxFor(m => m.LastName)
+                @Html.ValidationMessageFor(m => m.LastName)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-3">
+                @Html.LabelFor(m => m.EmailAddress)
+            </div>
+            <div class="col-xs-9">
+                @Html.TextBoxFor(m => m.EmailAddress)
+                @Html.ValidationMessageFor(m => m.EmailAddress)
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-xs-3">
+                @Html.LabelFor(m => m.Message)
+            </div>
+            <div class="col-xs-9">
+                @Html.TextAreaFor(m => m.Message)
+                @Html.ValidationMessageFor(m => m.Message)
+            </div>
+        </div>
+        <button>Trimite</button>
+        //// Am testat cu PaperCut daca functioneaza
+
+
+    }
+
+
+
+</div>
