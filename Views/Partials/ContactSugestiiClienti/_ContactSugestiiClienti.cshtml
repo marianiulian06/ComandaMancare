@@ -1,12 +1,11 @@
 ﻿@inherits UmbracoViewPage<comandamancare.Models.ContactSugestiiClienti>
 
+
 @using (Html.BeginUmbracoForm("SubmitForm", "ContactSugestiiClientiSurface", FormMethod.Post))
 {
     @Html.AntiForgeryToken()
+
     
-    <div class="form-group">
-        @Html.ValidationSummary()
-    </div>
 
     <div class="form-group">
         <div class="col-xs-3">
@@ -14,6 +13,7 @@
         </div>
         <div class="col-xs-9">
             @Html.TextBoxFor(m => m.FirstName)
+            @Html.ValidationMessageFor( m => m.FirstName)
         </div>
     </div>
 
@@ -23,6 +23,7 @@
         </div>
         <div class="col-xs-9">
             @Html.TextBoxFor(m => m.LastName)
+            @Html.ValidationMessageFor(m => m.LastName)
         </div>
     </div>
 
@@ -32,6 +33,7 @@
         </div>
         <div class="col-xs-9">
             @Html.TextBoxFor(m => m.EmailAddress)
+            @Html.ValidationMessageFor(m => m.EmailAddress)
         </div>
     </div>
 
@@ -41,9 +43,11 @@
         </div>
         <div class="col-xs-9">
             @Html.TextAreaFor(m => m.Message)
+            @Html.ValidationMessageFor(m => m.Message)
         </div>
     </div>
-    <button>Trimite</button>       //// Am testat cu PaperCut daca functioneaza 
+    <button>Trimite</button>
+//// Am testat cu PaperCut daca functioneaza
 
 
 }

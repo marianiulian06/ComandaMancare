@@ -34,7 +34,6 @@ namespace comandamancare.Controllers
             message.Body = model.Message;
             SmtpClient client = new SmtpClient("127.0.0.1", 25);
             client.Send(message);
-        }                                     
-
+        }
     }
 }

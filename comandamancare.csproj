@@ -296,12 +296,24 @@
     <Content Include="config\logviewer.searches.config.js" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
+    <None Include="Scripts\jquery-1.8.0.intellisense.js" />
+    <Content Include="Scripts\jquery-1.8.0.js" />
+    <Content Include="Scripts\jquery-1.8.0.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\ContactSugestiiClientiSurfaceController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MyApiController.cs" />
     <Compile Include="Controllers\PeopleController.cs" />
+    <Compile Include="Controllers\SubmitFormAjaxSurfaceController.cs" />
     <Compile Include="EnableRouting\myComposer.cs" />
     <Compile Include="Models\ContactSugestiiClienti.cs" />
     <Compile Include="Models\Individual.cs" />
@@ -335,6 +347,10 @@
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Partials\ContactSugestiiClienti\_ContactSugestiiClienti.cshtml" />
     <Content Include="Views\ContactSugestiiClienti.cshtml" />
+    <Content Include="Views\Partials\SubmitFormAjax\_FormSuccess.cshtml" />
+    <Content Include="Views\Partials\SubmitFormAjax\_FormError.cshtml" />
+    <Content Include="Views\Partials\SubmitFormAjax\_SubmitFormAjax.cshtml" />
+    <Content Include="Views\SubmitFormAjax.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -343,8 +359,11 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Views\Home\" />
     <Folder Include="Views\MyApi\" />
     <Folder Include="Views\Products\" />
+    <Folder Include="Views\SubmitFormAjaxSurface\" />
+    <Folder Include="Views\SubmitFormAjax\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
