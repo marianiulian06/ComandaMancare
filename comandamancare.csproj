@@ -310,13 +310,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\ContactSugestiiClientiSurfaceController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MyApiController.cs" />
     <Compile Include="Controllers\PeopleController.cs" />
     <Compile Include="Controllers\SubmitFormAjaxSurfaceController.cs" />
     <Compile Include="EnableRouting\myComposer.cs" />
     <Compile Include="Models\ContactSugestiiClienti.cs" />
     <Compile Include="Models\Individual.cs" />
+    <Compile Include="Models\SubmitFormAjax.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="EnableRouting\ResterSettingsComponent.cs" />
   </ItemGroup>

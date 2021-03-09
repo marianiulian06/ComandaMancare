@@ -15,15 +15,7 @@
 <div class="container">
 
   
-
-
-
-    @if (TempData["ContactSucces"] != null && (bool)TempData["ContactSucces"])
-    {
-        <p>Mesajul tau a fost trimis cu succes!</p>
-    }
-    else
-    {
+    @{
         Html.RenderAction("RenderForm", "SubmitFormAjaxSurface");
     }
 

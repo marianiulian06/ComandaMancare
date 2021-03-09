@@ -206,3 +206,4 @@ C:\Users\iuli\Desktop\umbraco1.1\comandamancare\obj\Debug\comandamancare.dll
 C:\Users\iuli\Desktop\umbraco1.1\comandamancare\obj\Debug\comandamancare.pdb
 C:\Users\iuli\Desktop\umbraco1.1\comandamancare\bin\DocumentFormat.OpenXml.dll
 C:\Users\iuli\Desktop\umbraco1.1\comandamancare\bin\DocumentFormat.OpenXml.xml
+C:\Users\iuli\Desktop\umbraco1.1\comandamancare\obj\Debug\comandamancare.csprojAssemblyReference.cache
