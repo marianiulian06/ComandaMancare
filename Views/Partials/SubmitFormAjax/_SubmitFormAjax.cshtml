@@ -13,7 +13,9 @@
 
         @Html.AntiForgeryToken()
 
-
+    <div class = "form-box" > 
+    
+     <div class = "form-content">
 
         <div class="form-group">
             <div class="col-xs-3">
@@ -37,10 +39,10 @@
 
         <div class="form-group">
             <div class="col-xs-3">
-                @Html.LabelFor(m => m.EmailAddress)
+              @Html.LabelFor(m => m.EmailAddress)
             </div>
             <div class="col-xs-9">
-                @Html.TextBoxFor(m => m.EmailAddress)
+               @Html.TextBoxFor(m => m.EmailAddress) 
                 @Html.ValidationMessageFor(m => m.EmailAddress)
             </div>
         </div>
@@ -54,12 +56,86 @@
                 @Html.ValidationMessageFor(m => m.Message)
             </div>
         </div>
-        <button>Trimite</button>
-        //// Am testat cu PaperCut daca functioneaza
-
+       
+        <button class= "btn btn-warning">Trimite</button>
+        @* Am testat cu PaperCut daca functioneaza *@ 
+    </div>
+</div>
 
     }
 
 
 
 </div>
+
+
+
+<style> 
+
+
+#formOuter {
+    
+    text-align:left;
+    
+    
+}
+
+.form-box {
+    font-size: 30px;    
+    color:orange;
+    font-family: cursive;
+    background-color: #fff;
+    background-image: url("https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm21-terazzo-sasi-03_1.jpg?w=1300&dpr=1&fit=default&crop=default&q=80&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=6e92aa5d113084aac87642c809b7330b");
+     background-size: cover;
+    
+    text-align:center;
+     box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 
+     12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 0px 4px 50px 23px rgba(204,255,184,0);
+    border-radius: 10px;
+   
+    
+}
+
+
+
+input {
+       margin: 0;
+       font-size: 25px;
+       height: 40px;
+       transition: box-shadow .3s;
+       border-radius:10px;
+       border: 1px solid green;
+       background: #fff;
+       width:50%;
+      
+}
+
+.form-content{
+    
+    text-align: center;
+}
+
+#Message {
+    width:50%;
+    border-radius: 10px;
+}
+
+input:active {
+     border-radius:10px;
+      transition: box-shadow .3s;
+}
+
+input:hover {
+  box-shadow: 0 0 21px rgba(33,33,33,.2); 
+}
+
+button {
+    margin-bottom: 10px;
+}
+
+.col-xs-3 {
+     margin-top:10px;
+}
+
+
+</style>
