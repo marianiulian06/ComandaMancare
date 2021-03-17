@@ -16,19 +16,18 @@ namespace comandamancare.Controllers
 
         [HttpPost]
         [ValidateAntiForgeryToken] //  prevent cross-site request forgery attacks
-        public ActionResult SubmitForm(ContactSugestiiClienti model)
+        public ActionResult SubmitForm(SubmitFormAjax model)
         {
             if (ModelState.IsValid)
             {
                 SendEmail(model);
-                TempData["ContactSucces"] = true;
                 return PartialView(PARTIAL_VIEW_FOLDER + "_FormSuccess.cshtml");
             }
             return PartialView(PARTIAL_VIEW_FOLDER + "_FormError.cshtml");
 
         }
 
-        private void SendEmail(ContactSugestiiClienti model)
+        private void SendEmail(SubmitFormAjax model)
         {
             MailMessage message = new MailMessage(model.EmailAddress, "website@comandamancare.web.local");
             message.Subject = string.Format("De la {0} {1} - {2}", model.FirstName, model.LastName, model.EmailAddress);

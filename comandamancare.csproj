@@ -310,13 +310,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Controllers\ContactSugestiiClientiSurfaceController.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MyApiController.cs" />
     <Compile Include="Controllers\PeopleController.cs" />
+    <Compile Include="Controllers\EmployeeController.cs" />
     <Compile Include="Controllers\SubmitFormAjaxSurfaceController.cs" />
     <Compile Include="EnableRouting\myComposer.cs" />
     <Compile Include="Models\ContactSugestiiClienti.cs" />
     <Compile Include="Models\Individual.cs" />
+    <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\SubmitFormAjax.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="EnableRouting\ResterSettingsComponent.cs" />
   </ItemGroup>
@@ -351,6 +353,7 @@
     <Content Include="Views\Partials\SubmitFormAjax\_FormError.cshtml" />
     <Content Include="Views\Partials\SubmitFormAjax\_SubmitFormAjax.cshtml" />
     <Content Include="Views\SubmitFormAjax.cshtml" />
+    <Content Include="Views\Employees.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -361,7 +364,9 @@
   <ItemGroup>
     <Folder Include="Views\Home\" />
     <Folder Include="Views\MyApi\" />
+    <Folder Include="Views\My\" />
     <Folder Include="Views\Products\" />
+    <Folder Include="Views\Student\" />
     <Folder Include="Views\SubmitFormAjaxSurface\" />
     <Folder Include="Views\SubmitFormAjax\" />
   </ItemGroup>
