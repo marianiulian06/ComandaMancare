@@ -20,6 +20,8 @@
     
 }
 
+<div class = "body"> 
+
      <div class = "center">  
         	
             @if (Model.FeaturedProducts != null)
@@ -27,16 +29,16 @@
                 foreach (ContentModels.Product product in Model.FeaturedProducts)
                 {
                     
-                    
-                    <div class="card" style="width: 50%;">
+                    <br> <br>
+                    <div class="card">
                         <br>
                           <img class="card-img-top" src="@product.Photos.Url" style ="width:50%">
                           <div class="card-body">
                             <h5 class="card-title">@product.ProductName</h5>
                             <p class="card-text">@product.Description</p>
                             <a href="@product.Url" class="btn btn-outline-dark" style="width: 100%;">Vezi Restaurant</a>
-  </div>
-</div>
+                            </div>
+                    </div>
                     <br> <br> 
                     
                 }
@@ -44,4 +46,52 @@
             }
             
             
-            </div>  
+        </div>  
+    </div>      
+            
+            
+            <style>
+            
+                
+                .card{
+                
+                     font-family: cursive;
+                     box-shadow:
+                               inset 0 -3em 3em rgba(0,0,0,0.1),
+                                     0 0  0 2px rgb(255,255,255),
+                                     0.3em 0.3em 1em rgba(0,0,0,0.3);
+                     width: 30%;
+                }
+                
+                
+                
+                
+                @@media screen and (max-width: 1400px) {
+                
+                .card{
+                
+                 width: 40%;
+                 
+                }
+                
+                
+                
+                }
+                
+                 
+                @@media screen and (max-width: 1000px) {
+                
+                .card{
+                
+                 width: 60%;
+                 
+                }
+                footer {
+                width: 100%}
+                
+                
+                }
+                
+                
+                
+            </style>
