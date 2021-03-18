@@ -103,7 +103,7 @@ input {
        font-size: 20px;
        height: 40px;
        transition: box-shadow .3s;
-       border-radius:10px;
+       border-radius:20px;
        border: 1px solid green;
        background: #fff;
        width:50%;
@@ -117,7 +117,7 @@ input {
 
 #Message {
     width:50%;
-    border-radius: 10px;
+    border-radius: 20px;
     font-size: 20px;
 }
 
@@ -138,6 +138,23 @@ button {
 
 .col-xs-3 {
      margin-top:10px;
+}
+
+
+@@media screen and (max-width: 1000px) {
+
+.form-box {
+width: 100%;
+}
+
+}
+
+@@media screen and (max-width: 600px) {
+
+#Message,input {
+width: 70%;
+}
+
 }
 
 

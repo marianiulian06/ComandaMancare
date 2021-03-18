@@ -6,6 +6,7 @@
     @Html.AntiForgeryToken()
 
 <div class = "form-box">   
+  <div class = "form-content">  
 
     <div class="form-group">
         <div class="col-xs-3">
@@ -48,6 +49,7 @@
     </div>
     <button class = "btn btn-light">Trimite</button>
         @* Am testat cu PaperCut daca functioneaza *@
+ </div>
 </div>
 
 }
@@ -55,19 +57,24 @@
 
 <style> 
 
+
+
+
 .form-box {
     text-align: left;
-    
     font-size: 30px;
-    
+     font-family: cursive;
     background-image: url("https://thumbs.dreamstime.com/z/asian-food-background-various-ingredients-rustic-stone-top-view-vietnam-thai-cuisine-148762904.jpg");
     background-size: cover;
     width: 100%;
     padding: 50px;
     border-radius: 40px;
-    
     color: white;
     text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
     
 }
 
@@ -76,6 +83,7 @@
 #Message, input {
     font-size: 20px;
      width: 50%;
+     border-radius: 20px;
 }
 
 
@@ -84,6 +92,51 @@ button {
     font-size: 20px;
     width: 10%;
 }
+
+.form-content{
+     text-align: left;
+}
+
+@@media screen and (max-width: 1000px) {
+
+  .form-content{
+  text-align: center;
+  
+}
+
+button {
+width: 20%;
+}
+
+}
+
+@@media screen and (max-width: 800px) {
+
+#Message,input {
+width: 100%;
+}
+
+button {
+width: 20%;
+}
+
+
+}
+
+
+@@media screen and (max-width: 600px) {
+
+#Message,input {
+width: 100%;
+}
+
+
+button {
+width: 50%;
+}
+
+}
+
 
 
 

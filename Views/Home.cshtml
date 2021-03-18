@@ -4,19 +4,16 @@
 	Layout = "Master.cshtml";
 }
 
-
 <br> <br> <br> <br> 
-
+<div class= "content"> 
 <div class = "container"> 
 
 <div class="container-fluid text-center">
   <h1 class="siteName">@Model.Value("siteName")</h1>
   <p class = "descriptionIntro"> @Model.Value("descriptionIntro")</p>
 </div>
+
 <br> <br><br> <br>
-
-
-
 
     @Html.GetGridHtml(Model, "bodyTextHome", "bootstrap3-fluid")
 
@@ -25,15 +22,10 @@
     </form>
     
     <br><br>
- 
- 
- 
-
- 
   
 </div>
 
 
-
+</div>
 
 
