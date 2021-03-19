@@ -70,11 +70,12 @@
 
         <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
 
-            <p> © 2021 Copyright: Marian Iulian </p>
-
+             <p> @Model.Value("footerCopyright", fallback: Fallback.ToAncestors) </p> 
+             <strong>  @Model.Value("footerName", fallback: Fallback.ToAncestors)  </strong>
+             
         </div>
 
-    </footer>   <!-- to do: de modificat Footer-->
+    </footer> 
 
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 

@@ -6,7 +6,7 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "6dfab0a2766d459f")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "9aa2ae6a614006e8")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -109,6 +109,13 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
 		[ImplementPropertyType("siteName")]
 		public string SiteName => this.Value<string>("siteName");
+
+		///<summary>
+		/// The Time
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		[ImplementPropertyType("theTime")]
+		public global::System.DateTime TheTime => this.Value<global::System.DateTime>("theTime");
 	}
 
 	/// <summary>Products</summary>
@@ -142,6 +149,20 @@ namespace Umbraco.Web.PublishedModels
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
 		[ImplementPropertyType("featuredProducts")]
 		public global::System.Collections.Generic.IEnumerable<global::Umbraco.Core.Models.PublishedContent.IPublishedContent> FeaturedProducts => this.Value<global::System.Collections.Generic.IEnumerable<global::Umbraco.Core.Models.PublishedContent.IPublishedContent>>("featuredProducts");
+
+		///<summary>
+		/// TitlePageProduct
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		[ImplementPropertyType("titlePageProduct")]
+		public string TitlePageProduct => this.Value<string>("titlePageProduct");
+
+		///<summary>
+		/// VeziRestaurantButton
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		[ImplementPropertyType("veziRestaurantButton")]
+		public string VeziRestaurantButton => this.Value<string>("veziRestaurantButton");
 
 		///<summary>
 		/// Content
@@ -374,6 +395,13 @@ namespace Umbraco.Web.PublishedModels
 		public global::System.Web.IHtmlString SubTitle => this.Value<global::System.Web.IHtmlString>("subTitle");
 
 		///<summary>
+		/// Testimonials
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		[ImplementPropertyType("testimonials")]
+		public string Testimonials => this.Value<string>("testimonials");
+
+		///<summary>
 		/// Title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
@@ -485,6 +513,20 @@ namespace Umbraco.Web.PublishedModels
 		{ }
 
 		// properties
+
+		///<summary>
+		/// SuccesMessage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		[ImplementPropertyType("succesMessage")]
+		public string SuccesMessage => this.Value<string>("succesMessage");
+
+		///<summary>
+		/// Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		[ImplementPropertyType("titleContactSugestiiClienti")]
+		public global::System.Web.IHtmlString TitleContactSugestiiClienti => this.Value<global::System.Web.IHtmlString>("titleContactSugestiiClienti");
 	}
 
 	/// <summary>test</summary>
