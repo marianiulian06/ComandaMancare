@@ -13,12 +13,12 @@
 <br>
 <br>
 
-
+<div class= "title">@Model.Value("titleContactSugestiiClienti") </div>
 <div class="container">
 
     @if (TempData["ContactSucces"] != null && (bool)TempData["ContactSucces"])
     {
-        <p>Mesajul tau a fost trimis cu succes!</p>
+        <p>@Model.Value("succesMessage")</p>
     }
     else
     {
@@ -28,5 +28,8 @@
 
 </div>
 
+<style>
+    
 
+ </style>
 
