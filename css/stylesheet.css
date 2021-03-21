@@ -72,59 +72,6 @@ min-height: 100vh;
  
  /* Form Styles*/ 
  
- .umbraco-forms-page{
-     display:block;
-      margin: auto;
-      padding:auto;
-     
-
-
-}
-
  
-.umbraco-forms-caption{ 
-    
-         /* Form Name */
-          font-family:  cursive;
-          font-size: 40px;
-          
-          
-}
-
-.umbraco-forms-fieldset {
-       /* inputuri */
-       font-family:  cursive;
-          font-size: 20px;
-          margin:0;
-          padding:0;
-        
-
-}
-
-
-
-.col-sm-10, .umbraco-forms-field-wrapper{
-    
-   padding:12px;
-   margin:0;
-   
-}
-
-.umbraco-forms-navigation{
-    
-    padding-left: 25px;
-    width: 100%;
-}
-
-.umbracoForms-Indicator{
-  font-family:  cursive;
-          font-size: 20px;
-           color:red;
-}
-
-.umbraco-forms-field{
-    width: 100%;
-}
-
-
+ 
 

@@ -15,7 +15,7 @@
               "width": 12,
               "fields": [
                 {
-                  "caption": "Nume Complet",
+                  "caption": "Nume",
                   "tooltip": "",
                   "placeholder": null,
                   "cssClass": null,
