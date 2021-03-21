@@ -4,15 +4,91 @@
 	Layout = "Master.cshtml";
 }
 
-
-
 <br> <br> <br>
-<div class = "container">
+<br> <br> <br>
+
+<div class = "content">
   @Html.GetGridHtml(Model, "contactForm", "bootstrap3-fluid")
   <h3> @Model.Value("subTitle") <a href = "testimonials">@Model.Value("testimonials")</a> </h3> 
 </div> 
 
+<br> <br> <br>
+<br> <br> <br>
 
 
-
+<style>
+    
+    
+    .content {
+        
+        background-color: rgba(213, 216, 246, 0.41);
+        width:50%;
+        border-radius: 20px;
+        margin: auto;
+        justify-content:center;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        padding:60px;
+        
+    }
+   
+    
+    input{
+        
+        width:100%;
+        border-radius:10px;
+        background-color:#fff;
+        border:none;
+        
+    }
+    
+    .btn{
+        width:20%;
+    }
+    
+    .form-control{
+        width:100%;
+        border-radius:10px;
+        background-color:#fff;
+    }
+    
+    h3 a{
+        color:black;
+        padding:20px;
+        font-size: 20px;
+        font-family:cursive;
+        
+    }
+    
+    .umbraco-forms-caption{
+         font-size: 30px;
+         text-align:center;
+  }
+    
+  @@media screen and (max-width: 1300px){
+  
+  .content{
+  width:70%;
+  }
+  .umbraco-forms-caption{
+  font-size: 24px;
+  }
+  
+  }  
+  
+  @@media screen and (max-width: 900px){
+  
+  .content{
+  width:90%;
+  }
+  
+  .btn{
+        width:50%;
+    }
+  .umbraco-forms-caption, input, .form-control, label, h3 a, span{
+  font-size: 15px;
+  }
+  
+  }
+    
+</style>
 
