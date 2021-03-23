@@ -59,6 +59,9 @@
     <Reference Include="DocumentFormat.OpenXml, Version=2.12.3.0, Culture=neutral, PublicKeyToken=8fb06cb64d019a17, processorArchitecture=MSIL">
       <HintPath>packages\DocumentFormat.OpenXml.2.12.3\lib\net46\DocumentFormat.OpenXml.dll</HintPath>
     </Reference>
+    <Reference Include="EntityFramework, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
     <Reference Include="Examine, Version=1.0.2.0, Culture=neutral, processorArchitecture=MSIL">
       <HintPath>packages\Examine.1.0.2\lib\net452\Examine.dll</HintPath>
     </Reference>
@@ -183,6 +186,7 @@
     <Reference Include="Superpower, Version=1.0.0.0, Culture=neutral, PublicKeyToken=aec39280ded1b3a7, processorArchitecture=MSIL">
       <HintPath>packages\Superpower.2.0.0\lib\net45\Superpower.dll</HintPath>
     </Reference>
+    <Reference Include="System.Data.Entity" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Data.SqlServerCe, Version=4.0.0.1, Culture=neutral, PublicKeyToken=89845dcd8080cc91, processorArchitecture=MSIL">
       <HintPath>packages\Umbraco.SqlServerCE.4.0.0.1\lib\net472\System.Data.SqlServerCe.dll</HintPath>
@@ -296,7 +300,24 @@
     <Content Include="config\logviewer.searches.config.js" />
     <Content Include="Content\Site.css" />
     <Content Include="Global.asax" />
+    <EntityDeploy Include="Models\LoginDataModel.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>LoginDataModel.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\LoginDataModel.edmx.diagram">
+      <DependentUpon>LoginDataModel.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-1.8.0.intellisense.js" />
+    <Content Include="Models\LoginDataModel.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <LastGenOutput>LoginDataModel.Context.cs</LastGenOutput>
+      <DependentUpon>LoginDataModel.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\LoginDataModel.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>LoginDataModel.edmx</DependentUpon>
+      <LastGenOutput>LoginDataModel.cs</LastGenOutput>
+    </Content>
     <Content Include="Scripts\jquery-1.8.0.js" />
     <Content Include="Scripts\jquery-1.8.0.min.js" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
@@ -313,12 +334,32 @@
     <Compile Include="Controllers\MyApiController.cs" />
     <Compile Include="Controllers\PeopleController.cs" />
     <Compile Include="Controllers\EmployeeController.cs" />
+    <Compile Include="Controllers\SignInSurfaceController.cs" />
     <Compile Include="Controllers\SubmitFormAjaxSurfaceController.cs" />
     <Compile Include="EnableRouting\myComposer.cs" />
     <Compile Include="Models\ContactSugestiiClienti.cs" />
     <Compile Include="Models\Individual.cs" />
     <Compile Include="Models\Employee.cs" />
+    <Compile Include="Models\LoginDataModel.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDataModel.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LoginDataModel.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDataModel.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\LoginDataModel.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>LoginDataModel.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\SignIn.cs" />
     <Compile Include="Models\SubmitFormAjax.cs" />
+    <Compile Include="Models\User.cs">
+      <DependentUpon>LoginDataModel.tt</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="EnableRouting\ResterSettingsComponent.cs" />
   </ItemGroup>
@@ -354,6 +395,10 @@
     <Content Include="Views\Partials\SubmitFormAjax\_SubmitFormAjax.cshtml" />
     <Content Include="Views\SubmitFormAjax.cshtml" />
     <Content Include="Views\Employees.cshtml" />
+    <Content Include="Views\Partials\SignIn\_SignIn.cshtml" />
+    <Content Include="Views\IntraInCont.cshtml" />
+    <Content Include="Views\Partials\SignIn\_SignInSuccess.cshtml" />
+    <Content Include="Views\Partials\SignIn\_SignInError.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -366,9 +411,13 @@
     <Folder Include="Views\MyApi\" />
     <Folder Include="Views\My\" />
     <Folder Include="Views\Products\" />
+    <Folder Include="Views\SignInSurface\" />
     <Folder Include="Views\Student\" />
     <Folder Include="Views\SubmitFormAjaxSurface\" />
     <Folder Include="Views\SubmitFormAjax\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
