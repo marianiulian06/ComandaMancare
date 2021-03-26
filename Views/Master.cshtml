@@ -77,7 +77,7 @@
 
     <footer>
 
-        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        <div class="text-center p-3" style="">
 
              <p> @Model.Value("footerCopyright", fallback: Fallback.ToAncestors) </p> 
              <strong>  @Model.Value("footerName", fallback: Fallback.ToAncestors)  </strong>
@@ -92,11 +92,14 @@
     <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.16.0/jquery.validate.min.js"></script>
     <script src="https://ajax.aspnetcdn.com/ajax/mvc/5.2.3/jquery.validate.unobtrusive.min.js"></script>
 
-
-
-
-
-
-
 </body>
+
+<style>
+    
+    footer{
+        background-color:black;
+        color:white;
+    }
+    
+</style>
 </html>

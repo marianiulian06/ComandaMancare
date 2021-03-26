@@ -35,9 +35,15 @@ namespace comandamancare.Controllers
                     return PartialView(PARTIAL_VIEW_FOLDER + "_SignInError.cshtml");
                 }
 
+                else
+                {
+                    Session["userID"] = userDetails.UserID;
+                    return PartialView(PARTIAL_VIEW_FOLDER + "_SignInSuccess.cshtml");
+                }
+
             }
 
-            return PartialView(PARTIAL_VIEW_FOLDER + "_SignInSuccess.cshtml");
+           
         }
     }
 }

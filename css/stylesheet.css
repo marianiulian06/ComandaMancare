@@ -69,6 +69,13 @@ min-height: 100vh;
  background-color: rgba(0, 0, 0, 0.2);
  }
  
+ @media screen and (max-width: 400px) { 
+     img { font-size: 20px
+     color:green}
+     
+     
+     
+ }
  
  /* Form Styles*/ 
  
