@@ -38,5 +38,6 @@ Get si Post. Am incercat sa fac Attribute Routing, ca sa il activez am creat o
 Componenta si am inregistrat aceasta folosind un Composer (not complete yet). 
 
 Pentru: Variabile de sesiune *TempData / *Session 
+
 -am implementat TempData in UmbracoBeginForm si Session in SignInSurface.
 
