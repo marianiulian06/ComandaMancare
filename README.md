@@ -23,6 +23,7 @@ formularului
 
 
 Pentru: *Comunicarea view-urilor
+
 Am implementat similar ca si la UmbracoBeginForm, pana la partea de trimitere a formularului. 
 Am instalat fisierele Ajax. In controller am returnat trimiterea formularului catre una din cele doua view-uri( _FormSucces.cshtml sau _FormError.cshtml).
 Puteam folosi acelasi model ca si la UmbracoBeginForm dar am mai creat unul cu nume specific pentru a nu se confunda 
