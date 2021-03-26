@@ -6,7 +6,7 @@ using  Umbraco.Core.Models;
 using  Umbraco.Core.Models.PublishedContent;
 using  Umbraco.Web;
 using  Umbraco.ModelsBuilder.Embedded;
-[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "5fb3b4f86f337e57")]
+[assembly:ModelsBuilderAssembly(PureLive = true, SourceHash = "71b06e8413f8d0ca")]
 [assembly:System.Reflection.AssemblyVersion("0.0.0.1")]
 
 
@@ -631,6 +631,46 @@ namespace Umbraco.Web.PublishedModels
 		{ }
 
 		// properties
+
+		///<summary>
+		/// Title SignInError
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		[ImplementPropertyType("titleSignInError")]
+		public string TitleSignInError => this.Value<string>("titleSignInError");
+	}
+
+	/// <summary>SignInError</summary>
+	[PublishedModel("signInError")]
+	public partial class SignInError : PublishedContentModel
+	{
+		// helpers
+#pragma warning disable 0109 // new is redundant
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		public new const string ModelTypeAlias = "signInError";
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		public new static IPublishedContentType GetModelContentType()
+			=> PublishedModelUtility.GetModelContentType(ModelItemType, ModelTypeAlias);
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(Expression<Func<SignInError, TValue>> selector)
+			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(), selector);
+#pragma warning restore 0109
+
+		// ctor
+		public SignInError(IPublishedContent content)
+			: base(content)
+		{ }
+
+		// properties
+
+		///<summary>
+		/// Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "8.10.1")]
+		[ImplementPropertyType("titleSignInError")]
+		public string TitleSignInError => this.Value<string>("titleSignInError");
 	}
 
 	/// <summary>Folder</summary>
